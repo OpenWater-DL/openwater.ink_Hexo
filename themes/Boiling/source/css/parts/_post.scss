@@ -1,0 +1,161 @@
+@use '../base' as *;
+.post-title {
+  position: fixed;
+  top: 1rem;
+  left: 2rem;
+  z-index: 6;
+  font-size: 1.5rem;
+  font-weight: 400;
+  margin-bottom: 0.5rem;
+}
+
+.post-work-type {
+  position: fixed;
+  top: 3.5rem;
+  left: 2rem;
+  z-index: 6;
+  color: #333;
+  font-size: 1rem;
+  font-weight: 200;
+  font-style: italic;
+}
+
+.portfolio-container {
+  margin-top: 13 * $unit;
+  margin-left: 4 * $unit;
+  width: 100%;
+
+  @include mq(sm) {
+    margin-left: 0;
+    
+  }
+
+  .left {
+    position: fixed;
+    width: 30%;
+    @include mq(sm) {
+      position: relative;
+      width: auto;
+      margin: 0 2rem;
+    }
+  }
+  .right {
+    position: absolute;
+    right: 4 * $unit;
+    width: 60%;
+    // background-color: orange;
+
+    @include mq(sm) {
+      position: relative;
+      right: 0;
+      width: 100%;
+    }
+  }
+
+  .post-copyright {
+    position: relative;
+    margin-top: 32px;
+    margin-bottom: 16px;
+    text-align: right;
+    font-size: 0.5rem;
+    color: #333;
+    @include mq(sm) {
+      right: 1rem;
+    }
+  }
+
+  // ———— 左侧信息 ——————
+  .post-info {
+    font-size: 0.8rem;
+
+    .en {
+      font-size: 0.9rem;
+      font-weight: 300;
+    }
+    line-height: 200%;
+    a,
+    .info-a {
+      color: black;
+      font-style: italic;
+      text-decoration: underline;
+      // transition: 0.35s ease-in-out;
+      &:hover {
+        background-color: yellow;
+        color: black;
+        text-decoration: none;
+        // transition: 0.35s ease-in-out;
+      }
+    }
+  }
+
+  // ———— 右侧内容 ——————
+  .post-content {
+    line-height: 2;
+    color: #555;
+    text-align: center;
+  
+    @include mq(sm) {
+      margin: 1rem;
+    }
+
+    img {
+      width: 100%;
+      max-width: 100%;
+      display: block;
+      margin: 0 auto;
+      box-shadow: 0px 0px 20px -1px #b7b7b779;
+    }
+
+    embed,
+    video {
+      width: 100%;
+      height: 60%;
+      box-shadow: 0px 0px 20px -1px #b7b7b779;
+    }
+
+    a {
+      color: #333;
+      text-decoration: none;
+      border-bottom: 1px solid #bbb;
+      &:hover {
+        color: #000;
+        text-decoration: none;
+        border-bottom: 1px solid #555;
+      }
+    }
+  }
+}
+
+// ———— 翻页器 ——————
+.post-back-btn,
+.post-nav {
+  position: fixed;
+  left: 2rem;
+  bottom: 3rem;
+  width: 24px;
+  padding: 10px;
+  transition: transform 0.3s;
+  @include mq(sm) { 
+ background-color: $color-background-blur;
+ 
+
+ &:hover{
+  background-color:yellow;
+}
+  }
+  a {
+    display: block;
+    width: 100%;
+    transition: transform 0.3s;
+  
+    img {
+      width: 100%;
+      display: block;
+    }
+  }
+
+  &:hover {
+    transition: transform 0.3s;
+    // transform: scale(1.2);
+  }
+}

@@ -1,0 +1,38 @@
+<!-- <% if (page.prev || page.next){ %>
+  <nav class="post-nav">
+  
+    <% if (page.next){ %>
+      <a href="<%- url_for(page.next.path) %>" id="post-nav-older" class="post-nav-link">
+        <img src="/favicon/older.png" alt="">
+      </a>
+    <% } %>
+
+    <% if (page.prev){ %>
+      <a href="<%- url_for(page.prev.path) %>" id="post-nav-newer" class="post-nav-link">
+            <img src="/favicon/prev.png" alt="">
+          </a>
+    <% } %>
+
+   
+    
+
+  
+  </nav>
+  <% } %> -->
+
+  <div class="post-back-btn">
+
+
+
+  <% if (page.back_btn === 'projects'){ %> 
+    <a  href="<%- url_for('interface/') %>"> 
+      <img src="/favicon/back.png" alt=""></a>
+    <% }else if(page.back_btn === 'works'){ %> 
+      <a  href="<%- url_for('graphics/') %>">
+         <img src="/favicon/back.png" alt=""></a>
+      <% }else if(page.back_btn === 'sketches'){ %>
+        <a  href="<%- url_for('sketches/') %>"> <img src="/favicon/back.png" alt=""></a>
+        <% } %>  
+
+
+  </div>

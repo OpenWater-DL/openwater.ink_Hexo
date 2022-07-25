@@ -1,0 +1,11 @@
+// 响应式。小屏幕
+$sm:'max-width:800px';
+$breakpoints: (
+    "sm": "screen and (max-width: 767px)"  
+) !default;
+
+// @media screen and ($sm) {}   别处使用就在选择器里写这句就可以。
+
+// "md": "screen and (min-width: 768px)",
+// "lg": "screen and (min-width: 1000px)",
+// "xl": "screen and (min-width: 1200px)",

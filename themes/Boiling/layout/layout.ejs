@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+  <!-- Head tag -->
+  <%- partial('_partial/head') %>
+
+
+  <!-- 所有页面都会基于这个基本layout排列 -->
+
+  <body>
+
+      <div class="container-fluid  body-container main" id='main'>
+        <!-- Header -->
+        <% if (!is_post()){ %>        
+          <%- partial('_partial/header') %>
+                <% } %>      
+      <%- body %>
+
+
+  </div>
+  </body>
+  <%- partial('_partial/footer') %>
+</html>

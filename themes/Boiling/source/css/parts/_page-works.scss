@@ -1,0 +1,76 @@
+@use '../base' as *;
+.works-container {
+  position: relative;
+  width:80vw;
+  max-width: 1330px;
+  
+  margin: 0 auto;
+  margin-top: $container-top;
+  margin-bottom: 3rem;
+ 
+  display: flex;
+  gap: 5rem ;
+  flex-wrap: wrap;
+  justify-content:center;
+  transition: all 0.5s;
+  
+  @include mq(sm) {
+    width: 100%;
+   gap:0;
+  }
+
+
+  .works-each {
+     
+  //  border:solid red; 
+   @include mq(sm) {
+    width: 50%;    
+  }
+    .work-item {
+      /* border-radius: 5px; */
+      width: 250px;
+      height: 185px;
+      flex-basis: 30%;
+      overflow: hidden;     
+      box-shadow: 10px 20px 40px rgba(0, 0, 0, 0.1);
+      transition: opacity 0.35s, transform 0.35s;
+
+      @include mq(sm) {
+        width: auto;    
+        height: auto;
+        margin: 0 1rem 2rem 1rem;    
+        
+        a{
+          display: block;
+          height: auto;
+        }
+        img{
+          display: block;
+          width: 100%;
+        }
+
+      }
+    
+
+      &:hover {
+        z-index: 3;
+        transform: scale(1.1) rotate(6.18deg);
+        transition: transform 0.35s;       
+        box-shadow: 6px 8px 0px rgb(255, 251, 18);
+
+        @include mq(sm) {
+          transform: scale(0.98) rotate(2deg);
+          transition: transform 0.35s;       
+          box-shadow: 6px 8px 0  rgb(255, 251, 18);
+           }
+
+      }
+
+      img{
+          width: 100%;
+          // height: auto;         
+      }
+
+    }
+  }
+}

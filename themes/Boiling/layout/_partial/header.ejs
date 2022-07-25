@@ -1,0 +1,16 @@
+<!-- 来自header.ejs -->
+<div class="top-bg"></div>
+
+<nav class="navbar" >
+  
+    <a id="site-logo" href="<%- config.root %>">
+        <img id="logo-img" src="/favicon/cupLogo.png">       
+    </a>
+
+    <a id="about-icon" href="<%- url_for('about-me/') %>">
+        <img id="hi" src="/favicon/hi3.png" alt="">
+    </a>
+
+    <%- partial('_partial/nav-list') %>
+
+</nav>

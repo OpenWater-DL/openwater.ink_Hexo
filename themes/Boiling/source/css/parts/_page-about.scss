@@ -1,0 +1,166 @@
+@use '../base' as *;
+.page-container {
+  $font-color: #555;
+  min-width: 400px;
+  max-width: 550px;
+
+  margin: 0 auto;
+  margin-left: 20rem;
+  margin-top: $container-top + 16 * 4;
+
+  line-height: 2;
+  color: $font-color;
+
+  display: flex; //为了控制大小屏中的显示顺序
+
+  @include mq(sm) {
+    margin: 0 6rem;
+    margin-top: $container-top + 16 * 4;
+    flex-direction: column;
+    min-width: auto;
+  max-width: auto;
+  }
+  .contact-me {   order: 1;  }
+
+  .about-img {
+    order: 1;
+    position: fixed;
+    top: $container-top + 16 * 4;
+    left: 4rem;
+
+    width: 150px;
+    height: 150px;
+
+    margin-bottom: 1rem;
+
+    @include mq(sm) {
+      order: 1;
+      position: relative;
+      top: 0;
+      left: 0;
+    }
+
+    .my-photo {
+      width: 100%;
+      border-radius: 5%;
+      transform-origin: bottom center;
+      animation: me 1.5s infinite;
+
+      @keyframes me {
+        $x_d: 2px;
+        $r_d: 0.5deg;
+        0% {
+          transform: rotate(-$r_d) translateX(-$x_d);
+        }
+        50% {
+          transform: rotate($r_d) translateX(0px);
+        }
+        100% {
+          transform: rotate(-$r_d) translateX(-$x_d);
+        }
+      }
+    }
+    .my-100 {
+      position: absolute;
+      width: 50%;
+      top: 10%;
+      left: 40%;
+      animation: temperature 2s infinite;
+
+      @keyframes temperature {
+        $d: 3px; //增量
+        $f1_top: -$d;
+        $f1_left: 2px; //左
+
+        $f2_top: $f1_top -$d;
+        $f2_left: $f1_left + $d; //上
+
+        $f3_top: $f1_top;
+        $f3_left: $f2_left + $d; //右
+
+        $f4_top: $f3_top + $d;
+        $f4_left: $f2_left; //下
+
+        0% {
+          transform: translate($f1_left, $f1_top);
+        }
+        25% {
+          transform: translate($f2_left, $f2_top);
+        }
+        50% {
+          transform: translate($f3_left, $f3_top);
+        }
+        75% {
+          transform: translate($f4_left, $f4_top);
+        }
+        100% {
+          transform: translate($f1_left, $f1_top);
+        }
+      }
+      @include mq(sm) {
+        position: relative;
+        top: -100%;
+        left: 40%;
+      }
+    }
+  }
+
+  //联系方式
+  .contact-ul {
+    order: 2;
+    position: fixed;
+    top: $container-top + 16*4 + 170;
+    left: 4rem;
+
+    // width: 150px;
+    height: 150px;
+    @include mq(sm) {order: 3;}
+    li {
+      display: flex;
+      align-items: center;
+      p {
+        font-size: 0.9rem;
+        margin-left: 0.5rem;
+        margin-bottom: 0;
+        &.en {
+          font-weight: 300;
+        }
+      }
+    }
+
+    @include mq(sm) {
+      position: relative;
+      top: 0;
+      left: 0;
+    }
+  }
+
+  .about-contents {
+    order: 2;
+    position: relative;
+    left: -2rem;
+
+
+    @include mq(sm) {
+      position: relative;
+      order: 1;
+      left: 0;
+    }
+    p {
+      margin-bottom: 1.5rem;
+      text-align: justify;
+      // color: red;
+    }
+
+    h1 {
+      font-size: 1.3rem;
+    }
+
+    a {
+      font-size: 0.9rem;
+      color: $font-color;
+      font-style: oblique;
+      // text-decoration: none;
+    }
+  }
+}

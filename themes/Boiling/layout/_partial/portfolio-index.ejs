@@ -1,0 +1,54 @@
+<!-- 这里是目录页的【单位】。而不是组 -->
+<!-- 【组】是page.ejs -->
+
+    <% if (page.title == "Graphics&Illustration"){ %>
+      <div class="hovereffect  work-item">
+
+        <a class="portfolio-link" href="<%- config.root %><%- item.path %>" >
+
+          <img class=" .img-responsive portfolio-img" src="<%- config.root %><%- item.pro_image%><%- item.img_BaseName%> " alt="<%- item.title || theme.default_post_title || "Untitled" %>" >
+
+        </a>
+
+        </div>
+      <% } else if (page.title == "Digital Interface"){ %>   
+        <div class="hovereffect  project-item">
+            <a class="portfolio-link" href="<%- config.root %><%- item.path %>" >
+      
+              <img class=" .img-responsive portfolio-img" src="<%- config.root %><%- item.pro_image%><%- item.img_BaseName%> " alt="<%- item.title || theme.default_post_title || "Untitled" %>" >
+                   
+                    </a>  
+                    <div class="project-info">
+                      <p class="title"><%- item.projects_page_describe%></p>  
+                      <p class="time"><%= moment(item.date).format( 'YYYY' )%></p>
+                      <p class="category"><%- item.work_type|| "Design" %></p>
+                    </div>
+                  
+        </div>
+        <% } else if (page.title == "Coding Sketch"){ %>   
+          <div class="sketch-item">
+
+            <a class="portfolio-link" href="<%- config.root %><%- item.path %>" >
+    
+              <img class=" .img-responsive portfolio-img" src="<%- config.root %><%- item.pro_image%><%- item.img_BaseName%> " alt="<%- item.title || theme.default_post_title || "Untitled" %>" >
+    
+            </a>
+    
+            </div>
+
+        <% } else {%>     
+
+   <div class="hovereffect  item">
+    <a class="portfolio-link" href="<%- config.root %><%- item.path %>">
+
+      <img class=" .img-responsive portfolio-img" src="<%- config.root %><%- item.cover_image%><%- item.img_BaseName%>" alt="<%- item.title || theme.default_post_title || "Untitled" %>" >
+           
+
+      <img class="page-time" src="#" alt="<%= moment(item.date).format( config.date_format)%>" style="display: none">     
+    </a>
+  </div>
+
+    <% } %>
+       
+
+   

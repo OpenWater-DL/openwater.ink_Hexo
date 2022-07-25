@@ -1,0 +1,48 @@
+<% if (page.title == "Digital Interface" ){%>
+
+    <div class="  projects-container ">
+        <% site.categories.findOne({name: "project"}).posts.sort('-date').each(function(post) {%>
+            <!-- <%= post.title %><br> -->
+            <div class="projects-each">
+                <%- partial('_partial/portfolio-index', {item: post}) %>
+            </div>
+
+
+            <% })%>
+    </div>
+
+
+    <% }else if (page.title == "Graphics&Illustration"){ %>
+        <section class="works-container">
+
+
+            <% site.categories.findOne({name: "work"}).posts.sort('-date').each(function(post) {%>
+                <div class="works-each">
+                    <%- partial('_partial/portfolio-index', {item: post}) %>
+                </div>
+
+                <% })%>
+
+        </section>
+
+        <% }else if (page.title == "Coding Sketch"){ %>
+            <section class="sketches-container">
+
+
+                <% site.categories.findOne({name: "sketch"}).posts.sort('-date').each(function(post) {%>
+                    <div class="sketch-each">
+                        <%- partial('_partial/portfolio-index', {item: post}) %>
+                    </div>
+
+                    <% })%>
+
+            </section>
+
+            <% }else{%>
+                <%- partial('_partial/loader') %>
+
+                    <%- partial('_partial/page-full', {item: page}) %>
+
+
+                        <%}%>
+

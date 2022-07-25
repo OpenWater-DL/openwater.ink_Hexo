@@ -1,0 +1,983 @@
+/* thai */
+@font-face {
+  font-family: "Kanit";
+  font-style: italic;
+  font-weight: 200;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/kanit/v12/nKKS-Go6G5tXcraQI82hZbdhMXBxEu_GOQ.woff2) format("woff2");
+  unicode-range: U+0E01-0E5B, U+200C-200D, U+25CC;
+}
+/* vietnamese */
+@font-face {
+  font-family: "Kanit";
+  font-style: italic;
+  font-weight: 200;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/kanit/v12/nKKS-Go6G5tXcraQI82hZaxhMXBxEu_GOQ.woff2) format("woff2");
+  unicode-range: U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169, U+01A0-01A1, U+01AF-01B0, U+1EA0-1EF9, U+20AB;
+}
+/* latin-ext */
+@font-face {
+  font-family: "Kanit";
+  font-style: italic;
+  font-weight: 200;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/kanit/v12/nKKS-Go6G5tXcraQI82hZa1hMXBxEu_GOQ.woff2) format("woff2");
+  unicode-range: U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+/* latin */
+@font-face {
+  font-family: "Kanit";
+  font-style: italic;
+  font-weight: 200;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/kanit/v12/nKKS-Go6G5tXcraQI82hZaNhMXBxEu8.woff2) format("woff2");
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+/* thai */
+@font-face {
+  font-family: "Kanit";
+  font-style: normal;
+  font-weight: 200;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/kanit/v12/nKKU-Go6G5tXcr5aOhWzVaFrNlJzIu4.woff2) format("woff2");
+  unicode-range: U+0E01-0E5B, U+200C-200D, U+25CC;
+}
+/* vietnamese */
+@font-face {
+  font-family: "Kanit";
+  font-style: normal;
+  font-weight: 200;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/kanit/v12/nKKU-Go6G5tXcr5aOhWoVaFrNlJzIu4.woff2) format("woff2");
+  unicode-range: U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169, U+01A0-01A1, U+01AF-01B0, U+1EA0-1EF9, U+20AB;
+}
+/* latin-ext */
+@font-face {
+  font-family: "Kanit";
+  font-style: normal;
+  font-weight: 200;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/kanit/v12/nKKU-Go6G5tXcr5aOhWpVaFrNlJzIu4.woff2) format("woff2");
+  unicode-range: U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+/* latin */
+@font-face {
+  font-family: "Kanit";
+  font-style: normal;
+  font-weight: 200;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/kanit/v12/nKKU-Go6G5tXcr5aOhWnVaFrNlJz.woff2) format("woff2");
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+/* thai */
+@font-face {
+  font-family: "Kanit";
+  font-style: normal;
+  font-weight: 300;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/kanit/v12/nKKU-Go6G5tXcr4-ORWzVaFrNlJzIu4.woff2) format("woff2");
+  unicode-range: U+0E01-0E5B, U+200C-200D, U+25CC;
+}
+/* vietnamese */
+@font-face {
+  font-family: "Kanit";
+  font-style: normal;
+  font-weight: 300;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/kanit/v12/nKKU-Go6G5tXcr4-ORWoVaFrNlJzIu4.woff2) format("woff2");
+  unicode-range: U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169, U+01A0-01A1, U+01AF-01B0, U+1EA0-1EF9, U+20AB;
+}
+/* latin-ext */
+@font-face {
+  font-family: "Kanit";
+  font-style: normal;
+  font-weight: 300;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/kanit/v12/nKKU-Go6G5tXcr4-ORWpVaFrNlJzIu4.woff2) format("woff2");
+  unicode-range: U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+/* latin */
+@font-face {
+  font-family: "Kanit";
+  font-style: normal;
+  font-weight: 300;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/kanit/v12/nKKU-Go6G5tXcr4-ORWnVaFrNlJz.woff2) format("woff2");
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+/* thai */
+@font-face {
+  font-family: "Kanit";
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/kanit/v12/nKKZ-Go6G5tXcraBGwCKd6xBDFs.woff2) format("woff2");
+  unicode-range: U+0E01-0E5B, U+200C-200D, U+25CC;
+}
+/* vietnamese */
+@font-face {
+  font-family: "Kanit";
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/kanit/v12/nKKZ-Go6G5tXcraaGwCKd6xBDFs.woff2) format("woff2");
+  unicode-range: U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169, U+01A0-01A1, U+01AF-01B0, U+1EA0-1EF9, U+20AB;
+}
+/* latin-ext */
+@font-face {
+  font-family: "Kanit";
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/kanit/v12/nKKZ-Go6G5tXcrabGwCKd6xBDFs.woff2) format("woff2");
+  unicode-range: U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+/* latin */
+@font-face {
+  font-family: "Kanit";
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/kanit/v12/nKKZ-Go6G5tXcraVGwCKd6xB.woff2) format("woff2");
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+.top-bg {
+  position: fixed;
+  top: 0;
+  z-index: 5;
+  width: 100%;
+  height: 80px;
+  background: rgba(240, 240, 240, 0.9411764706);
+  -webkit-backdrop-filter: blur(10px);
+          backdrop-filter: blur(10px);
+}
+@media screen and (max-width: 767px) {
+  .top-bg {
+    height: 6rem;
+  }
+}
+
+.navbar {
+  width: 100%;
+  height: 80px;
+  position: fixed;
+  top: 0;
+  z-index: 5;
+}
+@media screen and (max-width: 767px) {
+  .navbar {
+    height: 6rem;
+  }
+}
+.navbar #site-logo {
+  z-index: 5;
+  position: absolute;
+  left: 2rem;
+  top: 1.5rem;
+  width: 60px;
+}
+.navbar #site-logo img {
+  width: 100%;
+}
+.navbar #about-icon {
+  z-index: 5;
+  position: absolute;
+  height: 30px;
+  top: 1rem;
+  left: 6rem;
+}
+.navbar #about-icon img {
+  height: 100%;
+}
+.navbar .nav-list {
+  position: fixed;
+  top: 2rem;
+  right: 2rem;
+  list-style: none;
+  padding: 0;
+  display: flex;
+}
+@media screen and (max-width: 767px) {
+  .navbar .nav-list {
+    flex-direction: column;
+    gap: 0.2rem;
+    top: 1rem;
+  }
+}
+.navbar .nav-list .nav-text {
+  font-family: "Kanit";
+  color: gray;
+  display: block;
+  font-size: 1rem;
+  font-weight: 300;
+  text-decoration: none;
+  margin-left: 32px;
+}
+@media screen and (max-width: 767px) {
+  .navbar .nav-list .nav-text {
+    font-size: 0.9rem;
+    text-align: right;
+  }
+}
+.navbar .nav-list .nav-text:hover {
+  background-color: yellow;
+  color: black;
+}
+.navbar .nav-list .nowHere {
+  color: black;
+  text-decoration: underline;
+}
+
+.lg {
+  display: block;
+}
+@media screen and (max-width: 767px) {
+  .lg {
+    display: none;
+  }
+}
+
+.sm {
+  display: none;
+}
+@media screen and (max-width: 767px) {
+  .sm {
+    display: block;
+  }
+  .sm #sm-menu-input {
+    display: none;
+  }
+  .sm #sm-menu-input:checked ~ #nav-list-sm {
+    opacity: 1;
+    left: 2rem;
+    transition: 0.3s ease-in-out;
+  }
+  .sm #sm-menu-input:checked ~ #nav-bg-sm {
+    height: 15rem;
+    transition: 0.3s ease-in-out;
+  }
+  .sm #sm-menu-input:checked ~ label #menu-btn #line1 {
+    top: 50%;
+    transform: rotate(-45deg);
+    transition: ease-in-out 0.3s;
+  }
+  .sm #sm-menu-input:checked ~ label #menu-btn #line2 {
+    top: 50%;
+    transform: rotate(45deg);
+    transition: ease-in-out 0.3s;
+  }
+  .sm #menu-btn {
+    position: fixed;
+    top: 1.2rem;
+    right: 1.2rem;
+    z-index: 8;
+    width: 1rem;
+    height: 1rem;
+    padding: 0.8rem;
+  }
+  .sm #menu-btn .line {
+    position: absolute;
+    width: 1rem;
+    height: 2px;
+    background-color: black;
+    transition: ease-in-out 0.3s;
+  }
+  .sm #menu-btn #line1 {
+    top: 40%;
+    transform: rotate(0deg);
+  }
+  .sm #menu-btn #line2 {
+    top: 60%;
+    transform: rotate(0deg);
+  }
+  .sm #menu-btn:hover {
+    background-color: yellow;
+  }
+  .sm #nav-bg-sm {
+    position: fixed;
+    z-index: 7;
+    top: 0;
+    width: 100%;
+    height: 0;
+    background-color: yellow;
+    transition: 0.4s ease-in-out;
+  }
+  .sm #nav-list-sm {
+    list-style: none;
+    position: fixed;
+    z-index: 7;
+    top: 2rem;
+    left: -9rem;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    opacity: 0;
+    transition: 0.4s ease-in-out;
+  }
+  .sm #nav-list-sm .nav-text {
+    font-family: "Kanit";
+    color: gray;
+    display: block;
+    font-size: 1rem;
+    font-weight: 300;
+    text-decoration: none;
+  }
+  .sm #nav-list-sm .nav-text:hover {
+    color: black;
+    -webkit-text-decoration: underline 1px gray;
+            text-decoration: underline 1px gray;
+  }
+}
+
+footer .home-footer {
+  position: fixed;
+  right: 1.5rem;
+  bottom: 1.5rem;
+  font-size: 0.8rem;
+  color: rgba(119, 119, 119, 0.309);
+}
+footer .home-footer a {
+  color: rgba(87, 87, 87, 0.237);
+  text-decoration: none;
+}
+footer .page-footer {
+  font-size: 0.8rem;
+  color: red;
+}
+
+.page-container {
+  min-width: 400px;
+  max-width: 550px;
+  margin: 0 auto;
+  margin-left: 20rem;
+  margin-top: 168px;
+  line-height: 2;
+  color: #555;
+  display: flex;
+}
+@media screen and (max-width: 767px) {
+  .page-container {
+    margin: 0 6rem;
+    margin-top: 168px;
+    flex-direction: column;
+    min-width: auto;
+    max-width: auto;
+  }
+}
+.page-container .contact-me {
+  order: 1;
+}
+.page-container .about-img {
+  order: 1;
+  position: fixed;
+  top: 168px;
+  left: 4rem;
+  width: 150px;
+  height: 150px;
+  margin-bottom: 1rem;
+}
+@media screen and (max-width: 767px) {
+  .page-container .about-img {
+    order: 1;
+    position: relative;
+    top: 0;
+    left: 0;
+  }
+}
+.page-container .about-img .my-photo {
+  width: 100%;
+  border-radius: 5%;
+  transform-origin: bottom center;
+  -webkit-animation: me 1.5s infinite;
+          animation: me 1.5s infinite;
+}
+@-webkit-keyframes me {
+  0% {
+    transform: rotate(-0.5deg) translateX(-2px);
+  }
+  50% {
+    transform: rotate(0.5deg) translateX(0px);
+  }
+  100% {
+    transform: rotate(-0.5deg) translateX(-2px);
+  }
+}
+@keyframes me {
+  0% {
+    transform: rotate(-0.5deg) translateX(-2px);
+  }
+  50% {
+    transform: rotate(0.5deg) translateX(0px);
+  }
+  100% {
+    transform: rotate(-0.5deg) translateX(-2px);
+  }
+}
+.page-container .about-img .my-100 {
+  position: absolute;
+  width: 50%;
+  top: 10%;
+  left: 40%;
+  -webkit-animation: temperature 2s infinite;
+          animation: temperature 2s infinite;
+}
+@-webkit-keyframes temperature {
+  0% {
+    transform: translate(2px, -3px);
+  }
+  25% {
+    transform: translate(5px, -6px);
+  }
+  50% {
+    transform: translate(8px, -3px);
+  }
+  75% {
+    transform: translate(5px, 0px);
+  }
+  100% {
+    transform: translate(2px, -3px);
+  }
+}
+@keyframes temperature {
+  0% {
+    transform: translate(2px, -3px);
+  }
+  25% {
+    transform: translate(5px, -6px);
+  }
+  50% {
+    transform: translate(8px, -3px);
+  }
+  75% {
+    transform: translate(5px, 0px);
+  }
+  100% {
+    transform: translate(2px, -3px);
+  }
+}
+@media screen and (max-width: 767px) {
+  .page-container .about-img .my-100 {
+    position: relative;
+    top: -100%;
+    left: 40%;
+  }
+}
+.page-container .contact-ul {
+  order: 2;
+  position: fixed;
+  top: 338px;
+  left: 4rem;
+  height: 150px;
+}
+@media screen and (max-width: 767px) {
+  .page-container .contact-ul {
+    order: 3;
+  }
+}
+.page-container .contact-ul li {
+  display: flex;
+  align-items: center;
+}
+.page-container .contact-ul li p {
+  font-size: 0.9rem;
+  margin-left: 0.5rem;
+  margin-bottom: 0;
+}
+.page-container .contact-ul li p.en {
+  font-weight: 300;
+}
+@media screen and (max-width: 767px) {
+  .page-container .contact-ul {
+    position: relative;
+    top: 0;
+    left: 0;
+  }
+}
+.page-container .about-contents {
+  order: 2;
+  position: relative;
+  left: -2rem;
+}
+@media screen and (max-width: 767px) {
+  .page-container .about-contents {
+    position: relative;
+    order: 1;
+    left: 0;
+  }
+}
+.page-container .about-contents p {
+  margin-bottom: 1.5rem;
+  text-align: justify;
+}
+.page-container .about-contents h1 {
+  font-size: 1.3rem;
+}
+.page-container .about-contents a {
+  font-size: 0.9rem;
+  color: #555;
+  font-style: oblique;
+}
+
+.projects-container {
+  position: relative;
+  width: 80vw;
+  height: auto;
+  margin: 0 auto;
+  margin-top: 104px;
+  margin-bottom: 1rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 5rem;
+}
+@media screen and (max-width: 767px) {
+  .projects-container {
+    width: 100%;
+    gap: 0;
+  }
+}
+.projects-container .projects-each {
+  position: relative;
+  width: 72vw;
+  height: 32vw;
+  max-width: 720px;
+  max-height: 320px;
+}
+@media screen and (max-width: 767px) {
+  .projects-container .projects-each {
+    width: 100%;
+    height: auto;
+    margin-bottom: 2rem;
+  }
+}
+.projects-container .projects-each .project-item {
+  position: relative;
+}
+@media screen and (max-width: 767px) {
+  .projects-container .projects-each .project-item {
+    margin: 0 1rem;
+  }
+}
+.projects-container .projects-each .project-item a {
+  width: 100%;
+}
+@media screen and (max-width: 767px) {
+  .projects-container .projects-each .project-item a {
+    display: block;
+    width: 100%;
+    height: 40vw;
+  }
+}
+.projects-container .projects-each .project-item .portfolio-img {
+  width: 100%;
+  max-height: 320px;
+  height: 32vw;
+  -o-object-fit: cover;
+     object-fit: cover;
+  box-shadow: 10px 20px 40px rgba(0, 0, 0, 0.1);
+  transition: opacity 0.35s, transform 0.35s;
+}
+@media screen and (max-width: 767px) {
+  .projects-container .projects-each .project-item .portfolio-img {
+    width: 100%;
+    height: 100%;
+    -o-object-fit: cover;
+       object-fit: cover;
+  }
+}
+.projects-container .projects-each .project-item .project-info {
+  opacity: 0;
+  transition: opacity 0.55s, transform 0.35s;
+  position: absolute;
+  right: -8rem;
+  top: 0;
+  width: 200px;
+  max-height: 320px;
+  height: 32vw;
+}
+@media screen and (max-width: 767px) {
+  .projects-container .projects-each .project-item .project-info {
+    display: none;
+  }
+}
+.projects-container .projects-each .project-item .project-info .title {
+  position: absolute;
+  top: 40%;
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 1.5rem;
+  line-height: 40px;
+  white-space: nowrap;
+}
+.projects-container .projects-each .project-item .project-info .time {
+  position: absolute;
+  bottom: 1rem;
+  color: #5c5c5c;
+  font-size: 0.5rem;
+}
+.projects-container .projects-each .project-item .project-info .category {
+  position: absolute;
+  bottom: 0;
+  color: #5c5c5c;
+  white-space: nowrap;
+  font-size: 0.5rem;
+}
+.projects-container .projects-each .project-item:hover .portfolio-img {
+  z-index: 2;
+  box-shadow: 16px 16px 0px rgb(255, 251, 18);
+  transform: scale(0.95) rotate(2deg) translate(-120px, 0);
+  transition: opacity 0.35s, transform 0.35s;
+}
+@media screen and (max-width: 767px) {
+  .projects-container .projects-each .project-item:hover .portfolio-img {
+    box-shadow: 6px 8px 0 rgb(255, 251, 18);
+    transform: scale(0.98) rotate(2deg);
+    transition: transform 0.35s;
+  }
+}
+.projects-container .projects-each .project-item:hover .project-info {
+  opacity: 1;
+  transition: opacity 0.5s, transform 0.35s;
+}
+
+.sketches-container {
+  position: relative;
+  width: 80vw;
+  max-width: 1330px;
+  margin: 0 auto;
+  margin-top: 104px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  transition: all 0.5s;
+  gap: 5rem;
+}
+@media screen and (max-width: 767px) {
+  .sketches-container {
+    width: 100%;
+    gap: 0;
+  }
+}
+@media screen and (max-width: 767px) {
+  .sketches-container .sketch-each {
+    width: 50%;
+    height: auto;
+  }
+}
+.sketches-container .sketch-each .sketch-item {
+  width: 150px;
+  height: 150px;
+}
+@media screen and (max-width: 767px) {
+  .sketches-container .sketch-each .sketch-item {
+    margin: 0 1rem 2rem 1rem;
+    width: auto;
+    height: auto;
+  }
+}
+.sketches-container .sketch-each .sketch-item a {
+  display: block;
+}
+.sketches-container .sketch-each .sketch-item a img {
+  display: block;
+  width: 100%;
+  height: 150px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  box-shadow: 10px 20px 40px 0px rgba(0, 0, 0, 0.07);
+  transition: opacity 0.35s, transform 0.3s;
+}
+@media screen and (max-width: 767px) {
+  .sketches-container .sketch-each .sketch-item a img {
+    width: 100%;
+    height: auto;
+  }
+}
+.sketches-container .sketch-each .sketch-item:hover img {
+  background: #efefef;
+  box-shadow: 8px 8px 0px #ffff00;
+  transform: rotate(3.5deg) scale(1.1);
+  transition: opacity 0.35s, transform 0.3s;
+}
+@media screen and (max-width: 767px) {
+  .sketches-container .sketch-each .sketch-item:hover img {
+    box-shadow: 6px 8px 0 rgb(255, 251, 18);
+    transform: scale(0.98) rotate(2deg);
+    transition: transform 0.35s;
+  }
+}
+
+.works-container {
+  position: relative;
+  width: 80vw;
+  max-width: 1330px;
+  margin: 0 auto;
+  margin-top: 104px;
+  margin-bottom: 3rem;
+  display: flex;
+  gap: 5rem;
+  flex-wrap: wrap;
+  justify-content: center;
+  transition: all 0.5s;
+}
+@media screen and (max-width: 767px) {
+  .works-container {
+    width: 100%;
+    gap: 0;
+  }
+}
+@media screen and (max-width: 767px) {
+  .works-container .works-each {
+    width: 50%;
+  }
+}
+.works-container .works-each .work-item {
+  /* border-radius: 5px; */
+  width: 250px;
+  height: 185px;
+  flex-basis: 30%;
+  overflow: hidden;
+  box-shadow: 10px 20px 40px rgba(0, 0, 0, 0.1);
+  transition: opacity 0.35s, transform 0.35s;
+}
+@media screen and (max-width: 767px) {
+  .works-container .works-each .work-item {
+    width: auto;
+    height: auto;
+    margin: 0 1rem 2rem 1rem;
+  }
+  .works-container .works-each .work-item a {
+    display: block;
+    height: auto;
+  }
+  .works-container .works-each .work-item img {
+    display: block;
+    width: 100%;
+  }
+}
+.works-container .works-each .work-item:hover {
+  z-index: 3;
+  transform: scale(1.1) rotate(6.18deg);
+  transition: transform 0.35s;
+  box-shadow: 6px 8px 0px rgb(255, 251, 18);
+}
+@media screen and (max-width: 767px) {
+  .works-container .works-each .work-item:hover {
+    transform: scale(0.98) rotate(2deg);
+    transition: transform 0.35s;
+    box-shadow: 6px 8px 0 rgb(255, 251, 18);
+  }
+}
+.works-container .works-each .work-item img {
+  width: 100%;
+}
+
+.post-title {
+  position: fixed;
+  top: 1rem;
+  left: 2rem;
+  z-index: 6;
+  font-size: 1.5rem;
+  font-weight: 400;
+  margin-bottom: 0.5rem;
+}
+
+.post-work-type {
+  position: fixed;
+  top: 3.5rem;
+  left: 2rem;
+  z-index: 6;
+  color: #333;
+  font-size: 1rem;
+  font-weight: 200;
+  font-style: italic;
+}
+
+.portfolio-container {
+  margin-top: 104px;
+  margin-left: 32px;
+  width: 100%;
+}
+@media screen and (max-width: 767px) {
+  .portfolio-container {
+    margin-left: 0;
+  }
+}
+.portfolio-container .left {
+  position: fixed;
+  width: 30%;
+}
+@media screen and (max-width: 767px) {
+  .portfolio-container .left {
+    position: relative;
+    width: auto;
+    margin: 0 2rem;
+  }
+}
+.portfolio-container .right {
+  position: absolute;
+  right: 32px;
+  width: 60%;
+}
+@media screen and (max-width: 767px) {
+  .portfolio-container .right {
+    position: relative;
+    right: 0;
+    width: 100%;
+  }
+}
+.portfolio-container .post-copyright {
+  position: relative;
+  margin-top: 32px;
+  margin-bottom: 16px;
+  text-align: right;
+  font-size: 0.5rem;
+  color: #333;
+}
+@media screen and (max-width: 767px) {
+  .portfolio-container .post-copyright {
+    right: 1rem;
+  }
+}
+.portfolio-container .post-info {
+  font-size: 0.8rem;
+  line-height: 200%;
+}
+.portfolio-container .post-info .en {
+  font-size: 0.9rem;
+  font-weight: 300;
+}
+.portfolio-container .post-info a,
+.portfolio-container .post-info .info-a {
+  color: black;
+  font-style: italic;
+  text-decoration: underline;
+}
+.portfolio-container .post-info a:hover,
+.portfolio-container .post-info .info-a:hover {
+  background-color: yellow;
+  color: black;
+  text-decoration: none;
+}
+.portfolio-container .post-content {
+  line-height: 2;
+  color: #555;
+  text-align: center;
+}
+@media screen and (max-width: 767px) {
+  .portfolio-container .post-content {
+    margin: 1rem;
+  }
+}
+.portfolio-container .post-content img {
+  width: 100%;
+  max-width: 100%;
+  display: block;
+  margin: 0 auto;
+  box-shadow: 0px 0px 20px -1px rgba(183, 183, 183, 0.4745098039);
+}
+.portfolio-container .post-content embed,
+.portfolio-container .post-content video {
+  width: 100%;
+  height: 60%;
+  box-shadow: 0px 0px 20px -1px rgba(183, 183, 183, 0.4745098039);
+}
+.portfolio-container .post-content a {
+  color: #333;
+  text-decoration: none;
+  border-bottom: 1px solid #bbb;
+}
+.portfolio-container .post-content a:hover {
+  color: #000;
+  text-decoration: none;
+  border-bottom: 1px solid #555;
+}
+
+.post-back-btn,
+.post-nav {
+  position: fixed;
+  left: 2rem;
+  bottom: 3rem;
+  width: 24px;
+  padding: 10px;
+  transition: transform 0.3s;
+}
+@media screen and (max-width: 767px) {
+  .post-back-btn,
+.post-nav {
+    background-color: rgba(240, 240, 240, 0.9411764706);
+  }
+  .post-back-btn:hover,
+.post-nav:hover {
+    background-color: yellow;
+  }
+}
+.post-back-btn a,
+.post-nav a {
+  display: block;
+  width: 100%;
+  transition: transform 0.3s;
+}
+.post-back-btn a img,
+.post-nav a img {
+  width: 100%;
+  display: block;
+}
+.post-back-btn:hover,
+.post-nav:hover {
+  transition: transform 0.3s;
+}
+
+* {
+  margin: 0px;
+  padding: 0px;
+  border: 0px;
+}
+
+html, body {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  width: 100%;
+  font-family: "Kanit", "Open Sans", sans-serif, "PingFang SC", "Hiragino Sans GB", "Heiti SC", STXihei, "Microsoft YaHei", SimHei, "WenQuanYi Micro Hei";
+  background-color: #f0f0f0;
+}
+
+a {
+  cursor: url("../favicon/back_point.png") 12 0, pointer;
+}
+
+p {
+  margin: 0;
+}
+
+::-moz-selection {
+  background: yellow;
+  color: black;
+}
+
+::selection {
+  background: yellow;
+  color: black;
+}
+
+form {
+  max-width: 500px;
+  margin: 0 auto;
+}
+
+#sketchbook canvas {
+  z-index: -1;
+  width: 100%;
+  height: 100vh;
+}
+
+.iconpark-icon {
+  width: 1.3rem;
+  height: 1.3rem;
+}/*# sourceMappingURL=styles.css.map */

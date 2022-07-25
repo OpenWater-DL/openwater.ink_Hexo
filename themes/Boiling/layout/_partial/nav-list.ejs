@@ -1,0 +1,59 @@
+
+
+
+
+    <% let url_interface =  url_for('interface/') %> 
+    <% let url_sketches =  url_for('sketches/') %> 
+    <% let url_graphics =  url_for('graphics/') %> 
+    
+    <!-- 在config里配置 -->
+    <% let text1 = config.menu.interface %> 
+    <% let text2 = config.menu.sketches %> 
+    <% let text3 = config.menu.graphics %> 
+
+
+            <%  if(is_post()){ %>
+                <div class="lg">
+                 <!-- 大屏菜单 -->
+                <nav class="navbar">
+                    <ul class="nav-list">
+                        <li> <a class="nav-text " href="<%- url_interface  %> "><%- text1 %></a></li>  
+                        <li> <a class="nav-text" href="<%- url_sketches  %> "><%- text2 %></a></li>
+                        <li> <a class="nav-text" href="<%- url_graphics %>"><%- text3 %> </a></li>   
+                     </ul>
+
+                </nav>
+                </div>
+                <div class="sm">
+                    <!-- 小屏菜单 -->
+                    <input type="checkbox" name="" id="sm-menu-input">
+                    <label for="sm-menu-input">   <div id="menu-btn"> 
+                        <div class="line" id="line1"></div>
+                        <div class="line" id="line2"></div>
+
+                    </div></label>
+                    <div id="nav-bg-sm"></div>
+                    <ul id="nav-list-sm">
+                        <li><a class="nav-text " href="<%- url_for('.') %>">Home</a></li>
+                        <li><a class="nav-text " href="<%- url_for('about-me/') %>">About</a></li>
+                        <li> <a class="nav-text " href="<%-  url_interface  %>"><%- text1 %></a></li>                
+                        <li> <a class="nav-text" href="<%- url_sketches    %> "><%- text2 %></a></li>
+                        <li> <a class="nav-text" href="<%- url_graphics %>"><%- text3 %></a></li>                    
+                    </ul>
+
+                </div>
+                
+                
+            <% }else{ %>
+            <ul class="nav-list">
+            <li> <a class="nav-text " href="<%- url_interface  %> ">
+                <%- text1 %></a></li>
+
+            <li> <a class="nav-text" href="<%- url_sketches    %> "><%- text2 %></a></li>
+            <li> <a class="nav-text" href="<%- url_graphics %>"><%- text3 %></a></li>
+        </ul>
+            <% }%>
+
+
+
+

@@ -1,0 +1,37 @@
+@use '../base' as *;
+footer {
+
+  .home-footer{
+
+
+    position: fixed;
+    right:1.5rem;
+    bottom: 1.5rem;
+    font-size: 0.8rem;
+    color: rgba(119, 119, 119, 0.309);
+  
+    a {  
+      color: rgba(87, 87, 87, 0.237);
+      text-decoration: none;
+    }
+  
+
+  }
+
+  .page-footer{
+    //   position: absolute;
+    // // left: 4rem;
+    // bottom: 2rem;
+    // // width: 95vw;
+    // // height: 3rem;
+    // text-align: right;
+    font-size: .8rem;
+    color:red
+    }
+
+
+}
+
+
+
+

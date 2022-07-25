@@ -1,0 +1,32 @@
+
+  <% if(is_home()){ %>
+  
+  <%- partial('_partial/loader') %>
+
+  <!-- p5 sketch -->
+   <div id='sketchbook'></div>
+   <%- partial('_partial/home-js') %>     
+
+   <footer >
+     <div class="home-footer">
+      <p>©2021 开水 | <a class="beian" href="http://beian.miit.gov.cn/">桂ICP备2021005928号</a></p>
+     </div> 
+  
+  </footer>
+
+  <section style="display: none;"> 
+    <div class="row" id="row">
+            <% page.posts.forEach(function(item){ %>
+                <%- partial('_partial/portfolio-index', {item: item}) %>
+            <% }); %>   
+    </div>
+</section>
+   <% } %>
+   
+
+  
+
+
+
+
+

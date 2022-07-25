@@ -1,0 +1,12 @@
+<% if (item.cover_image){ %>
+    <div class="col-12 mb-4">
+        <img class="img-fluid project-img" src="<%- config.root %><%- item.cover_image %>" alt="<%- item.title || " Untitled " %>">
+    </div>
+    <% } %>
+        <section class="page-container " >
+            
+                <%- item.content %>       
+     
+          
+        </section>
+    

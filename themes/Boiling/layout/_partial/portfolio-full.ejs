@@ -1,0 +1,50 @@
+<!-- <div class="col-12 mb-4">
+  <img class="img-fluid project-img" src="<%- config.root %><%- item.cover_image || theme.default_cover_image %>" alt="<%- item.title || theme.default_post_title || "Untitled" %>">
+</div> -->
+
+<h1 class="post-title ">
+    <%- item.title || theme.default_post_title || "Untitled" %>
+</h1>
+<p class="post-work-type"> <%- item.work_type || 'Design' %></p>
+
+
+<div class="portfolio-container">
+
+    <div class="left post-info">
+        <div class="post-describe">
+            <p>
+                <%- item.describe %>
+            </p>
+
+        </div>
+
+        <!-- <date class="post-time ">
+                    <p>
+                      Created in  <%= moment(item.date).format('YYYY')%>
+                    </p>
+                </date> -->
+
+         
+                             
+                     
+                          
+
+
+    </div>
+
+
+    <div class=" right">
+        <div class="post-content">
+            <%- item.content %>
+        </div>
+
+        <div class='post-copyright'>
+            <p> © 2022 开水OPENWATER</p>
+        </div>
+    </div>
+
+
+
+
+
+</div>

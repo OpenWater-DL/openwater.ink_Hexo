@@ -1,0 +1,366 @@
+@media screen and (max-width:768px) {
+    html {
+        height: 100%;
+        cursor: url('../favicon/sqr.png')7 7, default;
+    }
+    body {
+        width: 100%;
+        padding: 0;
+        background-color: #F0F0F0;
+        font-family: 'Open Sans', sans-serif;
+        cursor: url('../favicon/sqr.png')7 7, default;
+    }
+    ::selection {
+        background: yellow;
+        color: black;
+    }
+    .container-fluid {
+        /* 这是写在body的类，保证父容器边距为0 */
+        padding: 0;
+    }
+    a {
+        cursor: url('../favicon/circle.png') 8 8, pointer;
+    }
+
+
+/* loader animate */
+/* loader animate */
+.loader-wrapper {
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 3;
+}
+.loader {
+    display: inline-block;
+    width: 30px;
+    height: 30px;
+    position: relative;
+    border: 4px solid black;
+    animation: loader 2s infinite ease;
+}
+.loader-inner {
+    vertical-align: top;
+    display: inline-block;
+    width: 100%;
+    background-color: yellow;
+    animation: loader-inner 2s infinite ease-in;
+}
+@keyframes loader {
+    0% {
+        transform: rotate(0deg);
+    }
+    25% {
+        transform: rotate(180deg);
+    }
+    50% {
+        transform: rotate(180deg);
+    }
+    75% {
+        transform: rotate(360deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
+@keyframes loader-inner {
+    0% {
+        height: 0%;
+    }
+    25% {
+        height: 0%;
+    }
+    50% {
+        height: 100%;
+    }
+    75% {
+        height: 100%;
+    }
+    100% {
+        height: 0%;
+    }
+}
+
+
+    /* 1-导航 */
+       .bg {
+        /* 移动端-下滑后导航出现的半透明白底 */
+        z-index: 3;
+        width: 100%;
+        height: 70px;
+        position: fixed;
+        top: 0;
+        background-color: transparent;
+        opacity: 0.8;
+    }
+    .navbar {
+		z-index: 5;
+        -webkit-user-select: none;
+		-moz-user-select: none;
+		-ms-user-select: none;
+		user-select: none;
+    }
+
+    .siteLogo {
+        position: fixed;
+        top: 20px;
+        left: 15px;
+        width: 60px;
+        height: 60px;
+    }
+    .siteLogo img {
+        width: 100%;
+    }
+    .wave {
+        position: fixed;
+        height: 30px;
+        top: 15px;
+        left: 85px;
+    }
+    #hi {
+        height: 100%;
+    }
+
+
+
+    .nav-list {
+        position: fixed;
+        top: 25px;
+        right: 1vw;
+    }
+    .nav-list li {
+        list-style: none;
+        float: right;
+        text-align: center;
+        margin: 0 1rem;
+    }
+    .nav-text {
+        color: black;
+        font-size: 24px;
+        font-weight: 600;
+        text-decoration: none;
+        transition-duration: 0.5s;
+    }
+    .nav-text:hover {
+        background-color: yellow;
+        color: black;
+        transition-duration: 0.5s;
+    }
+    .nowHere {
+        text-decoration: underline;
+    }
+    /* about me */
+    .page-init {
+        width: 80%;
+        
+        margin:0 auto;
+        line-height: 2;
+        color: #555;
+        
+        margin-top: 25vh;
+        text-align: left;
+
+    }
+    /* ______2-作品目录 ______*/
+    /* projects */
+    .projects-container {
+        position: relative;
+        top: 12vh;
+        margin: 0;
+        padding: 0;
+        /* width:1230px; */
+    }
+    .projects-each {
+        min-width: 100vw;
+        margin: 5vw auto;
+    }
+    .project-item {
+        overflow: hidden;
+        margin: 0 auto;
+        -webkit-box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.34);
+        box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.34);
+        transition: opacity 0.35s, transform 0.35s;
+    }
+    .project-item:hover {
+        z-index: 2;
+        transform: scale(.9) rotate(2deg);
+        -webkit-box-shadow: 6px 8px 0px rgb(255, 251, 18);
+        box-shadow: 6px 8px 0px rgb(255, 251, 18);
+    }
+    /* works */
+    .works-container {
+        position: relative;
+        top: 10vh;
+        margin: 0;
+        padding: 0;
+    }
+    .works-each {
+        max-width: 85vw;
+        margin: 5vw auto;
+    }
+    .work-item {
+        overflow: hidden;
+        border-radius: 5px;
+        margin: 0 auto;
+        -webkit-box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.34);
+        box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.34);
+        transition: opacity 0.35s, transform 0.35s;
+    }
+    .work-item img, .project-item img {
+        width: 100%;
+    }
+    .work-item:hover {
+        z-index: 3;
+        transform: scale(0.9) rotate(6.18deg);
+        transition: transform 0.35s;
+        -webkit-box-shadow: 6px 8px 0px rgb(255, 251, 18);
+        box-shadow: 6px 8px 0px rgb(255, 251, 18);
+    }
+    /* ______3-作品页 ______*/
+    .portfolio-full {
+        position: absolute;
+        top: 120px;
+        /* border: solid red; */
+    }
+    .portfolio-full-flex {
+        display: -webkit-flex;
+        display: flex;
+        flex-wrap: wrap;
+
+        width:100%;
+        /* border: solid green; */
+
+    }
+    .page-info {
+       
+        position: relative;
+        margin: 20px;
+    }
+    .page-info .describe p {
+        position: relative;
+        top: 3vw;
+        width: 70vw;
+        line-height: 2;
+    }
+
+    .info-a {
+        color:black;
+        font-style: italic;
+        text-decoration: underline;
+        
+    }
+    
+    .info-a:hover  {
+        background-color:yellow;
+        text-decoration: none ;
+        transition: .35s ease-in-out;
+    
+    }
+
+
+    .portfolio-content {
+/* border: solid red; */
+       width: 100%;
+        /* position: relative; */
+        left: 0vw;
+        line-height: 1.5;
+        color: #555;
+
+        display:flex;
+        display: -webkit-flex;
+        flex-wrap: wrap;
+        justify-content:center;
+        text-align: center;
+
+    }
+    .portfolio-content .text {
+        margin: .5rem 1rem 1rem 1rem;
+    }
+    .portfolio-content img {
+        width: 100%;
+        margin: 0 auto;
+    }
+    .portfolio-content embed, video {
+        width: 100%;
+        height: 30vh;
+    }
+
+/* ____文章页可被点击的图片 ____ */
+
+.content-a-img{
+
+	transition: .35s ease-in-out;
+}
+
+.content-a-img:hover{
+
+	filter:brightness(90%);
+
+}
+
+/* ____瀑布流式的图片类布局 ____ */
+
+.container1{
+
+	width:100%;
+	margin:0 auto;
+  
+  } 
+  
+  .grid {
+	display: flex;
+  }
+  
+  .grid-item img {
+  width:100%;
+  margin-bottom: .4em;
+  }
+  
+  .grid-col {
+	float: left;
+	width:50%;
+	padding:0 .2em;
+  }
+  
+  /* 2 columns by default, hide columns 2 & 3 */
+  .grid-col--3{ display: none }
+
+    /* 文章页上下篇+回顶部 */
+    .post-nav {
+        position: fixed;
+        width: 40px;
+        bottom: 3vh;
+        right: 3vw;
+
+        display: flex;
+        display: -webkit-flex;     
+        flex-direction: column;
+       
+    }
+    .post-nav a {
+        margin-bottom: 20px;
+    }
+
+    
+
+    .post-nav img {
+        width: 100%;
+        opacity: 0.7;
+        transition: opacity 0.35s, transform 0.35s;
+    }
+
+
+    .post-nav img:hover {
+        transform: scale(.9) rotate(2deg);
+    
+        transition: transform 0.35s;
+    }
+
+
+}

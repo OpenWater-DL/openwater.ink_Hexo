@@ -1,0 +1,19 @@
+@use 'breakpoint' as *;
+@mixin mq($breakpoint) {
+    @media #{map-get($breakpoints, $breakpoint)} {
+        @content;
+    }
+}
+
+@mixin cursor-rect {
+    cursor: url("../favicon/sqr.png") 7 7, default;
+    
+}
+
+@mixin cursor-ellipse {
+    cursor: url("../favicon/circle.png") 8 8, pointer;
+}
+
+@mixin cursor-backpoint{
+    cursor: url("../favicon/back_point.png") 12 0, pointer;
+}
