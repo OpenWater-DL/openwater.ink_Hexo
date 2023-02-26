@@ -7,6 +7,8 @@ date: 2019-02
 categories: work
 describe: 毕设好难。工作好累。
 back_btn: works
+work_type: Illustration
+
 ---
 <div style=" background-color:white; ">
 <a  href="https://waterpatch.oss-cn-guangzhou.aliyuncs.com/illustration/Work_Is_Hard/KS.jpg" class="fancybox" data-fancybox="gallery1"><img class="content-a-img" src="https://waterpatch.oss-cn-guangzhou.aliyuncs.com/illustration/Work_Is_Hard/KS.jpg" ></a>

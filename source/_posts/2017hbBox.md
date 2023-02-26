@@ -7,6 +7,8 @@ date: 2017-2
 categories: work
 describe: 本命日剧《CODE BLUE》名场面复刻（笑）。
 back_btn: works
+work_type: Voxels Design
+
 ---
 
 <div style=" background-color:black; ">

@@ -5,6 +5,8 @@ cover_image: images/
 pro_image: images/pro/
 date: 2018-11 17:37:42
 categories: work
+work_type: Motion Design
+
 describe: 腾讯x广美校企合作课题。为腾讯相册管家设计动态相册模板。<br>此模板为我负责的部分。出镜小天使是朋友三三的儿子骏骏。<br><br>本小组系列作品获腾讯相册管家“2018骏马扬鬃”银奖<br>
 back_btn: works
 ---
