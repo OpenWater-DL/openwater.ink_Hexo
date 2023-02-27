@@ -49,5 +49,26 @@ form {
     width: 1.3rem;
     height: 1.3rem;}
 
+    #loading-info{
+      position: fixed;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%,-50%);
+      z-index: 5;
+      background-color: yellow;
+      padding: 0 1rem;
+
+      animation: loadingText 3s infinite;
+    }
+
+
+    @keyframes loadingText{
+
+      0%{ background-color: yellow;  color: gray; transform: translate(-50%);}
+      50%{ background-color: gray; color: yellow;  transform: translate(50%);}
+      100%{ background-color: yellow;  color: gray; transform: translate(-50%);}
+
+    }
+
 
 

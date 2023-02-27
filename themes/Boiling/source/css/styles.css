@@ -389,19 +389,7 @@ footer .page-footer {
   width: 100%;
   border-radius: 5%;
   transform-origin: bottom center;
-  -webkit-animation: me 1.5s infinite;
-          animation: me 1.5s infinite;
-}
-@-webkit-keyframes me {
-  0% {
-    transform: rotate(-0.5deg) translateX(-2px);
-  }
-  50% {
-    transform: rotate(0.5deg) translateX(0px);
-  }
-  100% {
-    transform: rotate(-0.5deg) translateX(-2px);
-  }
+  animation: me 1.5s infinite;
 }
 @keyframes me {
   0% {
@@ -419,25 +407,7 @@ footer .page-footer {
   width: 50%;
   top: 10%;
   left: 40%;
-  -webkit-animation: temperature 2s infinite;
-          animation: temperature 2s infinite;
-}
-@-webkit-keyframes temperature {
-  0% {
-    transform: translate(2px, -3px);
-  }
-  25% {
-    transform: translate(5px, -6px);
-  }
-  50% {
-    transform: translate(8px, -3px);
-  }
-  75% {
-    transform: translate(5px, 0px);
-  }
-  100% {
-    transform: translate(2px, -3px);
-  }
+  animation: temperature 2s infinite;
 }
 @keyframes temperature {
   0% {
@@ -907,11 +877,11 @@ footer .page-footer {
 }
 @media screen and (max-width: 767px) {
   .post-back-btn,
-.post-nav {
+  .post-nav {
     background-color: rgba(240, 240, 240, 0.9411764706);
   }
   .post-back-btn:hover,
-.post-nav:hover {
+  .post-nav:hover {
     background-color: yellow;
   }
 }
@@ -982,4 +952,33 @@ form {
 .iconpark-icon {
   width: 1.3rem;
   height: 1.3rem;
+}
+
+#loading-info {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 5;
+  background-color: yellow;
+  padding: 0 1rem;
+  animation: loadingText 3s infinite;
+}
+
+@keyframes loadingText {
+  0% {
+    background-color: yellow;
+    color: gray;
+    transform: translate(-50%);
+  }
+  50% {
+    background-color: gray;
+    color: yellow;
+    transform: translate(50%);
+  }
+  100% {
+    background-color: yellow;
+    color: gray;
+    transform: translate(-50%);
+  }
 }/*# sourceMappingURL=styles.css.map */
