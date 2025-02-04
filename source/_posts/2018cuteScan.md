@@ -19,7 +19,7 @@ back_btn: works
 </div>
 <br>
 <div style=" background-color:#F3F3F3; ">
-<video controls poster="https://waterpatch.oss-cn-guangzhou.aliyuncs.com/2018-cuteScan/%E6%A0%B7%E7%89%87%E7%AB%96%E7%89%88-0010.png" >
+<video style=" max-width:400px " controls poster="https://waterpatch.oss-cn-guangzhou.aliyuncs.com/2018-cuteScan/%E6%A0%B7%E7%89%87%E7%AB%96%E7%89%88-0010.png" >
   <source src="https://waterpatch.oss-cn-guangzhou.aliyuncs.com/2018-cuteScan/%E6%A0%B7%E7%89%87%E7%AB%96%E7%89%88.mp4"  type="video/mp4">
   您的浏览器不支持 HTML5 video 标签。
 </video>

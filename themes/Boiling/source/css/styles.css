@@ -1,3 +1,4 @@
+@charset "UTF-8";
 /* thai */
 @font-face {
   font-family: "Kanit";
@@ -487,6 +488,17 @@ footer .page-footer {
   font-size: 0.9rem;
   color: #555;
   font-style: oblique;
+}
+.page-container #award {
+  list-style: none;
+  color: #8f8f8f;
+  margin-bottom: 3rem;
+}
+.page-container #award li::before {
+  content: "∙";
+  color: rgb(175, 174, 174);
+  top: 6px;
+  left: 0;
 }
 
 .projects-container {

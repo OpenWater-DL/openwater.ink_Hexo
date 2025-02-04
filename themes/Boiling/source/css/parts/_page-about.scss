@@ -163,4 +163,24 @@
       // text-decoration: none;
     }
   }
+
+ #award{
+  list-style: none;
+  color: #8f8f8f;
+  // position: relative;
+// padding-left: 1rem;
+  margin-bottom: 3rem;
+
+  li::before {
+    content: '∙';
+    // position: absolute;
+    color: rgb(175, 174, 174);
+    top: 6px;
+    left: 0; 
+  }
+ 
+      
+
+ }
+
 }
