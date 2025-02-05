@@ -3,3 +3,22 @@
 <script src="<%- config.root%>js/common.js"></script>
 <script src="<%- config.root%>js/lib/fancybox.js"></script>
 
+  <!-- 添加 Lenis 脚本 -->
+  <script src="https://cdn.jsdelivr.net/gh/studio-freight/lenis@1.0.27/bundled/lenis.min.js"></script> 
+  <script>
+    const lenis = new Lenis({
+      duration: 1.2,  // 滚动动画持续时间
+    smoothWheel: true,  // 启用平滑滚动
+    wheelMultiplier: 1,  // 滚动速度倍数
+    smoothTouch: false,  // 触摸设备上是否启用平滑滚动
+    touchMultiplier: 2,  // 触摸滚动速度倍数
+      
+    })
+
+    function raf(time) {
+      lenis.raf(time)
+      requestAnimationFrame(raf)
+    }
+
+    requestAnimationFrame(raf)
+  </script>

@@ -1,5 +1,5 @@
 
-  <% if(is_home()){ %>
+<% if(is_home()){ %>
   
   <%- partial('_partial/loader') %>
 
@@ -13,8 +13,8 @@
      <div class="home-footer">
       <p>2021-2023 Created by 开水 | <a class="beian" href="http://beian.miit.gov.cn/">桂ICP备2021005928号</a></p>
      </div> 
-  
   </footer>
+
 
   <section style="display: none;"> 
     <div class="row" id="row">
@@ -22,7 +22,7 @@
                 <%- partial('_partial/portfolio-index', {item: item}) %>
             <% }); %>   
     </div>
-</section>
+  </section>
    <% } %>
    
 

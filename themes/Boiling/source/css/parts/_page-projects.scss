@@ -94,26 +94,26 @@ $adj-img-h:32vw;
         .title {
           position: absolute;
           top:40%;
-          font-family: "Inter";
           font-style: normal;
           font-weight: 600;
           font-size: 1.5rem;
           line-height: 40px;
           white-space:nowrap;
+          color: #333;
         }
         .time {
           position: absolute;
           bottom: 1rem;
-          color: #5c5c5c;
-          font-size: .5rem;
+          color: #00000064;
+          font-size: .8rem;
         }
 
         .category {
           position: absolute;
           bottom: 0;
-          color: #5c5c5c;
+          color: #00000064;
           white-space:nowrap;
-          font-size: .5rem;
+          font-size: .8rem;
         }
       }
 
